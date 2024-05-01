@@ -21,7 +21,7 @@ StaticsPath = "./static"
 @app.route('/')
 def index():
     session['refresh_time'] = 10
-    return render_template('Index_new.html')
+    return render_template('gallery.html')
 
 
 @app.route('/ElencoLog', methods=['GET', 'POST'])
