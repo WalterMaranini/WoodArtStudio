@@ -66,8 +66,7 @@ def create_app():
         return redirect(url_for('login'))
 
     @app.route('/')
-    @login_required
-    def gallery():
+        def gallery():
         images = []
         image_folder = 'static/images'
         allowed_extensions = {'jpg', 'jpeg', 'png', 'gif'}
